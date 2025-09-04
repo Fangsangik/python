@@ -1,0 +1,13 @@
+import sys
+import inspect
+# from ..sub2 import module2
+
+# module1.py
+def mod1_test1():
+	print ("Module1 -> Test1")
+	# 현재 모듈의 파일 경로 출력
+	print("Path : ", inspect.getfile(inspect.currentframe()))
+
+def mod1_test2():
+	print ("Module1 -> Test2")
+	print("Path : ", inspect.getfile(inspect.currentframe()))
