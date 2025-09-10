@@ -1,6 +1,9 @@
 """
 CPU Bound Multi Processing
 Manager Shared Memory
+
+CPU 바운드 작업은 대부분의 시간을 계산에 사용하며,
+파일 압축은 CPU 성능에 크게 좌우되는 대표적인 계산 작업.
 """
 import os
 import time
@@ -16,7 +19,7 @@ def cpu_bound(n, total_list) :
     total_list.append(sum(i * i for i in range(n)))
 
 def main() :
-    numbers = [10000000 + x for x in range(20)]
+    numbers = [1000000 + x for x in range(20)]
     print(numbers)
 
     # 프로세스 리스트 선언
